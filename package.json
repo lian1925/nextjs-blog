@@ -4,22 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "rm -rf blog/dist && processmd blog/article/**/*.md --outputDir blog/dist --preview 110 --summaryOutput blog/dist/summary.json",
+    "watch": "rm -rf blog/dist && processmd blog/article/**/*.md --outputDir blog/dist --preview 110 --summaryOutput blog/dist/summary.json --watch",
     "deploy": "next build && next export -o docs && git checkout -- docs/CNAME && git checkout -- docs/.nojekyll && git add docs && git commit -m \"chore: regen site\" && git push origin master",
-    "start": "next start",
+    "start": "next",
     "dev": "node server.js",
-    "build": "next build",
-    "export": "next export",
-    "start": "NODE_ENV=production node server.js"
+    "export": "next build&&next export",
+    "serve": "NODE_ENV=production node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
     "express": "^4.16.4",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^7.0.2",
+    "node-sass": "^4.9.4",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-markdown": "^4.0.3"
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^3.1.1",
+    "processmd": "^4.2.1"
   }
 }

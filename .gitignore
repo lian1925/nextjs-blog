@@ -1,2 +1,11 @@
 node_modules
 .next
+.vscode
+./blog
+blog/dist/*.json
+blog/dist/**/*.json
+blog/article/*.md
+blog/article/**/*.md
+out/
+**/out/_next
+docs
