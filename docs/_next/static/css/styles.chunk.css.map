@@ -1,1 +1,1 @@
-{"version":3,"file":"static/css/styles.chunk.css","sources":["webpack:///./styles/header.scss"],"sourcesContent":["p {\n  color: black; }\n"],"mappings":"AAAA;AACA;;","sourceRoot":""}
+{"version":3,"file":"static/css/styles.chunk.css","sources":["webpack:///./styles/header.scss"],"sourcesContent":["p {\n  color: black; }\n\nh1 {\n  color: #8a036d; }\n"],"mappings":"AAAA;AACA;AACA;AACA;AACA;;","sourceRoot":""}
