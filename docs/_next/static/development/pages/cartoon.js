@@ -22807,23 +22807,15 @@ var Index = function Index() {
   var data = {
     recommand: [{
       image: "/static/image/favirate1.png",
-      url: "/cartoon/title1",
+      url: "/cartoon/0",
       alt: "爱心满屋飞"
     }, {
       image: "/static/image/favirate2.png",
-      url: "/cartoon/title2",
+      url: "/cartoon/1",
       alt: "懒虫快起床"
     }, {
       image: "/static/image/favirate1.png",
-      url: "/cartoon/title3",
-      alt: "爱心满屋飞"
-    }, {
-      image: "/static/image/favirate2.png",
-      url: "/cartoon/title4",
-      alt: "懒虫快起床"
-    }, {
-      image: "/static/image/favirate1.png",
-      url: "/cartoon/title5",
+      url: "/cartoon/2",
       alt: "爱心满屋飞"
     }],
     copyRight: "Copyright @ 漫画小动员 | 2009-2018"
@@ -22831,19 +22823,19 @@ var Index = function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 29
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Recommand, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 30
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 31
     },
     __self: this
   }, data.recommand.map(function (item) {
@@ -22852,7 +22844,7 @@ var Index = function Index() {
       key: item.url,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 34
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -22861,20 +22853,20 @@ var Index = function Index() {
       title: item.alt,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45
+        lineNumber: 35
       },
       __self: this
     }));
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 40
     },
     __self: this
   }, "\u63A8\u8350\u6F2B\u753B")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CopeyRight, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 42
     },
     __self: this
   }, data.copyRight));
