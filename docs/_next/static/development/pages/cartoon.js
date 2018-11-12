@@ -22665,33 +22665,27 @@ function extend() {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/_react@16.6.0@react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/_styled-components@4.0.3@styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _src_components_cartoon_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../src/components/cartoon/Layout */ "./src/components/cartoon/Layout.js");
-/* harmony import */ var _src_components_cartoon_Main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../src/components/cartoon/Main */ "./src/components/cartoon/Main.js");
+/* harmony import */ var _src_components_cartoon_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../src/components/cartoon/Layout */ "./src/components/cartoon/Layout.js");
+/* harmony import */ var _src_components_cartoon_Main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../src/components/cartoon/Main */ "./src/components/cartoon/Main.js");
 var _jsxFileName = "/Users/huahua/Documents/lian/react/hello-next/pages/cartoon/index.js";
 
 
 
-
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_cartoon_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_cartoon_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_cartoon_Main__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_cartoon_Main__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
   }));
 });
-var Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1.withConfig({
-  displayName: "cartoon__Title",
-  componentId: "sc-1rq5bx8-0"
-})(["color:red;"]);
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -23184,7 +23178,13 @@ var Index = function Index(props) {
       lineNumber: 57
     },
     __self: this
-  })));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, "\u521B\u4F5C\u4E8E\uFF1A", data.updateTime)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_3__["withRouter"])(Index)); // 3,style
@@ -23200,7 +23200,7 @@ var Tab = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConf
 var Content = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Main__Content",
   componentId: "sc-10hloyq-2"
-})(["display:flex;flex-direction:column;justify-content:center;margin-bottom:20px;pre{text-align:center;line-height:30px;font-size:16px;}img{width:500px;border:1.5px solid black;border-radius:15px;}"]);
+})(["display:flex;flex-direction:column;justify-content:center;margin-bottom:20px;pre{text-align:center;line-height:30px;font-size:16px;}img{width:500px;border:1.5px solid black;border-radius:15px;}p{color:#333;text-align:right;font-size:14px;}"]);
 
 /***/ }),
 
@@ -23317,22 +23317,27 @@ var Subtitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.wit
 var articles = [{
   id: 0,
   title: "报复",
+  updateTime: "2018年11月02日",
   content: "\n    \u8FC7\u597D\u6BCF\u4E00\u5929\n    \u5C31\u662F\u5BF9\u65E0\u5948\u4EBA\u751F\u6700\u597D\u7684\u62A5\u590D\n\n    \n![](/static/image/god.png)\n    "
 }, {
   id: 1,
   title: "工具",
+  updateTime: "2018年11月05日",
   content: "\n    \u6211\u4E0D\u662F\u6323\u94B1\u7684\u5DE5\u5177\n    \u6211\u4E0D\u662F\u6210\u529F\u7684\u5DE5\u5177\n    \u6211\u4E0D\u662F\u4EFB\u4F55\u4EBA\u7684\u5DE5\u5177\n    \n    \u6211\u662F\u597D\u4E0D\u5BB9\u6613\u6765\u4E00\u8D9F\u4EBA\u95F4\n    \u6211\u5F97\u662F\u81EA\u5DF1\u4EBA\u751F\u7684\u5DE5\u5177\n\n    \n![](/static/image/horse.png)\n    "
 }, {
   id: 2,
   title: "喜欢",
+  updateTime: "2018年11月07日",
   content: "\n    \u5728\u8FD9\u4E2A\u4E16\u754C\n    \u603B\u6709\u4F60\u9ED8\u9ED8\u559C\u6B22\u7684\u4EBA\n    \u4E5F\u6709\u9ED8\u9ED8\u559C\u6B22\u4F60\u7684\u4EBA\n    \n    \n\n    \n![](/static/image/\u9065\u8FDC\u7684\u7231\u6155.png)\n    "
 }, {
   id: 3,
   title: "伪劣产品",
+  updateTime: "2018年11月09日",
   content: "\n    \u597D\u597D\u6311\u670B\u53CB\n    \u597D\u597D\u6311\u5BF9\u8C61\n    \u597D\u597D\u6311\u4E0E\u4F60\u6709\u5173\u7684\u4EBA\n    \u56E0\u4E3A\u3002\u3002\u3002\n    \u4EBA\u4E5F\u6709\u4F2A\u52A3\u4EA7\u54C1\n    \n\n    \n![](/static/image/worse-product.png)\n    "
 }, {
   id: 4,
   title: "胖了",
+  updateTime: "2018年11月12日",
   content: "\n    \u5982\u679C\u6709\u4E00\u5929\uFF0C\u6211\u80D6\u4E86\n    \u6211\u5C31\u8EBA\u5728\u4E00\u5F20\u5F88\u8F6F\u5F88\u8F6F\u7684\u5E8A\u4E0A\n    \u4E5F\u8BB8\u5C31\u770B\u4E0D\u51FA\u80D6\u4E86\n    \n\n    \n![](/static/image/fat.png)\n    "
 }]; // export default articles;
 
@@ -23342,7 +23347,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!**************************************!*\
   !*** multi ./pages/cartoon/index.js ***!
   \**************************************/
@@ -23367,5 +23372,5 @@ module.exports = dll_5b81b1e0f709c3c4f825;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=cartoon.js.map
