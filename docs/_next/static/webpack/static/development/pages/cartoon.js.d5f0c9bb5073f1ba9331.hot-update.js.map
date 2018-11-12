@@ -1,0 +1,1 @@
+{"version":3,"file":"static/webpack/static/development/pages/cartoon.js.d5f0c9bb5073f1ba9331.hot-update.js","sources":["webpack:///./src/utils/constant.js"],"sourcesContent":["const BASE_URL = \"http://baidu.com\";\nconst RESPONSE_OK = 0;\n\nexport default {\n  BASE_URL,\n  RESPONSE_OK\n};\n"],"mappings":";;;;;;;;;;AAAA;AAAA;AACA;AAEA;AACA;AACA;AAFA;;;;A","sourceRoot":""}
