@@ -27000,6 +27000,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/_next@7.0.2@next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _utils_fetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils/fetch */ "./src/utils/fetch.js");
+/* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-toastify */ "./node_modules/_react-toastify@4.4.2@react-toastify/lib/index.js");
+/* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_toastify__WEBPACK_IMPORTED_MODULE_5__);
 
 var _jsxFileName = "/Users/huahua/Documents/lian/react/hello-next/src/components/cartoon/Comment.js";
 
@@ -27029,6 +27031,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 // 1, import
+
 
 
  // console.log(fetch);
@@ -27095,27 +27098,34 @@ function (_React$Component) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              _context.prev = 0;
-              _context.next = 3;
+              react_toastify__WEBPACK_IMPORTED_MODULE_5__["toast"].warn("🤷 🚀 评论功能暂不开放", {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true
+              });
+              _context.prev = 1;
+              _context.next = 4;
               return _utils_fetch__WEBPACK_IMPORTED_MODULE_4__["default"].get("/about", {});
 
-            case 3:
+            case 4:
               result = _context.sent;
               _context.next = 10;
               break;
 
-            case 6:
-              _context.prev = 6;
-              _context.t0 = _context["catch"](0);
-              console.log(_context.t0);
-              alert(_context.t0);
+            case 7:
+              _context.prev = 7;
+              _context.t0 = _context["catch"](1);
+              console.log(_context.t0); // alert(err);
 
             case 10:
             case "end":
               return _context.stop();
           }
         }
-      }, _callee, this, [[0, 6]]);
+      }, _callee, this, [[1, 7]]);
     })));
 
     _this.state = {
@@ -27134,14 +27144,14 @@ function (_React$Component) {
       var none_comments = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 89
         },
         __self: this
       }, "\u2615 \u8FD8\u6CA1\u6709\u8BC4\u8BBA");
       var some_comments = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 91
         },
         __self: this
       }, data.comments.map(function (item) {
@@ -27149,19 +27159,19 @@ function (_React$Component) {
           key: item.content,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 85
+            lineNumber: 94
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(User, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 86
+            lineNumber: 95
           },
           __self: this
         }, item.user), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 87
+            lineNumber: 96
           },
           __self: this
         }, "\u8BF4\uFF1A"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(CommentContent, {
@@ -27170,13 +27180,13 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 89
+            lineNumber: 98
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Time, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 92
+            lineNumber: 101
           },
           __self: this
         }, item.date, " |", " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
@@ -27185,7 +27195,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 94
+            lineNumber: 103
           },
           __self: this
         }, "\u56DE\u590D")));
@@ -27194,37 +27204,52 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 112
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Comments, {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_toastify__WEBPACK_IMPORTED_MODULE_5__["ToastContainer"], {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        newestOnTop: false,
+        closeOnClick: true,
+        rtl: false,
+        pauseOnVisibilityChange: true,
+        draggable: true,
+        pauseOnHover: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 113
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Comments, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 124
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 125
         },
         __self: this
       }, "\u8BC4\u8BBA"), comments), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Writting, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 129
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 130
         },
         __self: this
       }, "\u6211\u8981\u53D1\u8868\u770B\u6CD5"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 132
         },
         __self: this
       }, "\u60A8\u7684\u8BC4\u8BBA:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("textarea", {
@@ -27239,13 +27264,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 133
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122
+          lineNumber: 142
         },
         __self: this
       }, "\u60A8\u7684\u5927\u540D:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -27257,19 +27282,19 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 123
+          lineNumber: 143
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 149
         },
         __self: this
       }, "\xAB-\u5FC5\u586B"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 150
         },
         __self: this
       }, "\u60A8\u7684\u90AE\u7BB1:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -27281,19 +27306,19 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 151
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137
+          lineNumber: 157
         },
         __self: this
       }, "\xAB-\u9009\u586B\uFF0C\u4E0D\u516C\u5F00"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 158
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
@@ -27302,13 +27327,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 139
+          lineNumber: 159
         },
         __self: this
       }, "\u53D1\u8868"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 160
         },
         __self: this
       }, "\xAB-\u70B9\u51FB\u63D0\u4EA4")));
@@ -28201,7 +28226,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!**************************************!*\
   !*** multi ./pages/cartoon/index.js ***!
   \**************************************/
@@ -28226,5 +28251,5 @@ module.exports = dll_5b81b1e0f709c3c4f825;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=cartoon.js.map
